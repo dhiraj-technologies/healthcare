@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Open Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'Open Sans', system-ui, -apple-system, sans-serif;
+  }
+  body {
+    font-family: var(--font-body);
+    color: #333333;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Care Health Actual Website Theme Utilities */
+.actual-heading-underline {
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.actual-heading-underline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 2px;
+  background: #b8bbbe;
+}
+.actual-heading-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 2px;
+  background: #163A6B;
+  z-index: 1;
+}
+
+.actual-block {
+  background: #e3ebfa;
+  box-shadow: 0 2px 4px #a3a3a3;
+  transition: all 0.3s ease;
+}
+
+.actual-block:hover {
+  box-shadow: 0 4px 8px #888888;
+}
+
+.actual-btn {
+  background: #ffffff;
+  border: 2px solid #1F3C88;
+  color: #163A6B;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 10px 28px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.actual-btn:hover {
+  background: #2C4A7A;
+  color: #ffffff;
+  border-color: #2C4A7A;
+}
+
+.actual-btn-primary {
+  background: #1F3C88;
+  border: 2px solid #1F3C88;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 10px 28px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.actual-btn-primary:hover {
+  background: #163A6B;
+  border-color: #163A6B;
+}
+
+/* Pulsing live dot */
+.live-dot {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background: #28a745;
+  border-radius: 50%;
+  animation: liveTrafficPulse 1.5s infinite;
+}
+
+@keyframes liveTrafficPulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "users": [
+    {
+      "id": "user-admin",
+      "name": "Dr. Alok Verma",
+      "email": "admin@carehealth.com",
+      "passwordHash": "$2b$10$U4ttzxJxZa5i94mFQtoL1eZJShzS4sjjXA5U0jehjO2Li7BEpGTsa",
+      "role": "admin",
+      "phone": "+91-9999790231",
+      "avatar": "https://carehealthnursing.com/images/gallery/005.jpg",
+      "createdAt": "2026-09-22T09:14:34.584Z"
+    },
+    {
+      "id": "user-nurse-1",
+      "name": "Sister Priya Sharma",
+      "email": "nurse.priya@carehealth.com",
+      "passwordHash": "$2b$10$fU7HVdOG.qwD5hnnylW1lunpPvnBpCHIkaghfX5bO7EFpTSc/aO0u",
+      "role": "nurse",
+      "nurseId": "nurse-1",
+      "phone": "+91-9876543210",
+      "avatar": "https://carehealthnursing.com/images/gallery/003.jpg",
+      "createdAt": "2026-09-22T09:14:34.585Z"
+    },
+    {
+      "id": "user-patient-1",
+      "name": "Rajesh Khanna (Family Rep)",
+      "email": "family.khanna@carehealth.com",
+      "passwordHash": "$2b$10$gX4RcZKUWKhKAoIKAOwi2eGfJqyohjLqqlhTSD/l5mOitAP0g.2E.",
+      "role": "patient",
+      "patientId": "patient-1",
+      "phone": "+91-9876543210",
+      "createdAt": "2026-09-22T09:14:34.585Z"
+    }
+  ],
+  "patients": [
+    {
+      "id": "patient-1",
+      "userId": "user-patient-1",
+      "fullName": "Ramesh Khanna",
+      "age": 72,
+      "gender": "Male",
+      "diagnosis": "Acute Ischemic Stroke with Left Hemiparesis, Post-Tracheostomy & Ryle Tube Feeding",
+      "careType": "Critical ICU Bedside Nursing (24h Live-in)",
+      "hubLocation": "Janak Puri",
+      "address": "B-4/112, Janak Puri District Centre, West Delhi - 110058",
+      "emergencyContact": "Rajesh Khanna (Son): +91-9876543210",
+      "attendingPhysician": "Dr. Vivek Mehra (Senior Neurologist, Max Healthcare)",
+      "status": "active",
+      "assignedNurseId": "nurse-1",
+      "assignedNurseName": "Sister Priya Sharma",
+      "admissionDate": "2025-08-15"
+    },
+    {
+      "id": "patient-2",
+      "userId": "user-patient-2",
+      "fullName": "Mrs. Shakuntala Devi",
+      "age": 68,
+      "gender": "Female",
+      "diagnosis": "Post Total Knee Arthroplasty (Bilateral TKR) & Type 2 Diabetes",
+      "careType": "Post-Surgical Dressing & Physical Rehabilitation (12h Day)",
+      "hubLocation": "Noida",
+      "address": "Flat 402, Tower B, Sector 62, Noida, U.P. - 201309",
+      "emergencyContact": "Amit Sharma (Son): +91-9988776655",
+      "attendingPhysician": "Dr. Arvind Singhal (Orthopedic Surgeon, Fortis Hospital)",
+      "status": "active",
+      "assignedNurseId": "nurse-3",
+      "assignedNurseName": "Sister Anita Massey",
+      "admissionDate": "2025-09-02"
+    }
+  ],
+  "nurses": [
+    {
+      "id": "nurse-1",
+      "fullName": "Sister Priya Sharma",
+      "qualification": "B.Sc Nursing, ICU & Critical Care Diploma",
+      "experienceYears": 8,
+      "phone": "+91-9876543210",
+      "policeVerified": true,
+      "verificationId": "DL-POL-VER-2023-8841",
+      "councilRegistrationNo": "DNC-RN-48291",
+      "hubLocation": "Janak Puri (West Delhi)",
+      "specialties": [
+        "ICU Setup",
+        "Tracheostomy Care",
+        "BiPAP & Ventilator Management",
+        "Infusion Pumps"
+      ],
+      "activeCases": 1,
+      "rating": 4.9,
+      "shiftAvailability": "12h Day / 12h Night",
+      "avatar": "https://images.unsplash.com/photo-1594824813580-0a256f671158?w=300&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "nurse-2",
+      "fullName": "Nurse Rajesh Kumar",
+      "qualification": "GNM (General Nursing & Midwifery), Post-Op Specialist",
+      "experienceYears": 6,
+      "phone": "+91-9811223344",
+      "policeVerified": true,
+      "verificationId": "DL-POL-VER-2022-5104",
+      "councilRegistrationNo": "UPNC-RN-92014",
+      "hubLocation": "Noida Hub (Sector 62)",
+      "specialties": [
+        "Male Attendant Support",
+        "Stroke Rehabilitation",
+        "Catheter & Ryle Tube",
+        "Wound Dressing"
+      ],
+      "activeCases": 1,
+      "rating": 4.8,
+      "shiftAvailability": "24h Live-in",
+      "avatar": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "nurse-3",
+      "fullName": "Sister Anita Massey",
+      "qualification": "B.Sc Nursing, Geriatric Companion Care",
+      "experienceYears": 10,
+      "phone": "+91-9822334455",
+      "policeVerified": true,
+      "verificationId": "DL-POL-VER-2021-9923",
+      "councilRegistrationNo": "DNC-RN-31942",
+      "hubLocation": "Indirapuram (Ghaziabad)",
+      "specialties": [
+        "Elderly Dementia Care",
+        "Palliative Support",
+        "Diabetic Management",
+        "Post-Op Care"
+      ],
+      "activeCases": 2,
+      "rating": 5,
+      "shiftAvailability": "12h Day Shift",
+      "avatar": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "nurse-4",
+      "fullName": "Brother Sunil Verma",
+      "qualification": "Certified Male Attendant & Emergency Triage",
+      "experienceYears": 5,
+      "phone": "+91-9833445566",
+      "policeVerified": true,
+      "verificationId": "DL-POL-VER-2023-1102",
+      "councilRegistrationNo": "HSDC-ATT-7741",
+      "hubLocation": "Laxmi Nagar (East Delhi)",
+      "specialties": [
+        "Bedridden Patient Care",
+        "Sponge Bath & Hygiene",
+        "Wheelchair Transfer",
+        "Feeding Assistance"
+      ],
+      "activeCases": 1,
+      "rating": 4.9,
+      "shiftAvailability": "24h Live-in",
+      "avatar": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "sched-097",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "shiftDate": "2026-09-20",
+      "shiftType": "12h Day",
+      "startTime": "08:00 AM",
+      "endTime": "08:00 PM",
+      "status": "completed",
+      "tasks": [
+        "Tracheostomy tube inner cannula cleaning & dressing change",
+        "Morning vitals check & respiratory sound assessment",
+        "Ryle tube feed 250ml diabetic nutritional formula",
+        "Sponge bath & skin pressure care (back massage)",
+        "Physiotherapy: Active-assisted arm & leg range-of-motion"
+      ],
+      "notes": "Duty completed with excellence. Patient showed good responsiveness during physiotherapy session."
+    },
+    {
+      "id": "sched-098",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-2",
+      "nurseName": "Nurse Rajesh Kumar",
+      "shiftDate": "2026-09-20",
+      "shiftType": "12h Night",
+      "startTime": "08:00 PM",
+      "endTime": "08:00 AM",
+      "status": "completed",
+      "tasks": [
+        "Nighttime continuous SpO2 and pulse monitoring",
+        "Administered evening medications through enteral tube",
+        "Scheduled 2-hourly lateral posture repositioning",
+        "BiPAP mode checked at IPAP 12, EPAP 4"
+      ],
+      "notes": "Uneventful night shift. Patient rested comfortably with no respiratory distress observed."
+    },
+    {
+      "id": "sched-099",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "shiftDate": "2026-09-21",
+      "shiftType": "12h Day",
+      "startTime": "08:00 AM",
+      "endTime": "08:00 PM",
+      "status": "completed",
+      "tasks": [
+        "Tracheostomy suctioning performed per schedule",
+        "Bedside glucose monitoring (Fasting & Post-lunch)",
+        "Catheter hygiene & urine drainage bag measurement (1,450ml total)",
+        "Assisted wheelchair transfer and 20-min sun sitting in balcony",
+        "Oral hygiene and antiseptic gargle swab"
+      ],
+      "notes": "Family attended session. Patient sat in wheelchair for 20 minutes with stable vitals."
+    },
+    {
+      "id": "sched-100",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-2",
+      "nurseName": "Nurse Rajesh Kumar",
+      "shiftDate": "2026-09-21",
+      "shiftType": "12h Night",
+      "startTime": "08:00 PM",
+      "endTime": "08:00 AM",
+      "status": "completed",
+      "tasks": [
+        "Periodic vitals monitoring at 22:00, 02:00, 06:00",
+        "Bed position alteration and back massage for circulation",
+        "Enteral hydration 100ml warm water post-medication",
+        "Morning oral hygiene prior to shift handover"
+      ],
+      "notes": "Smooth transition. Handover given to Sister Priya Sharma with vitals log signed."
+    },
+    {
+      "id": "sched-101",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "shiftDate": "2026-09-22",
+      "shiftType": "12h Day",
+      "startTime": "08:00 AM",
+      "endTime": "08:00 PM",
+      "status": "in-progress",
+      "tasks": [
+        "Tracheostomy tube suctioning every 3 hours",
+        "Vitals recording every 4 hours (BP, SpO2, Heart rate)",
+        "Ryle Tube feeding 250ml diabetic formulated feed at 09:00, 13:00, 17:00",
+        "Passive limb mobilization exercises with physiotherapist guidance",
+        "Position change every 2 hours for bed-sore prevention"
+      ],
+      "notes": "Patient stable, alert, responding to hand pressure. BiPAP tolerated well during night.\n[Family/Patient Note - 09:14 AM]: Please prepare warm water for afternoon tube feed."
+    },
+    {
+      "id": "sched-102",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-2",
+      "nurseName": "Nurse Rajesh Kumar",
+      "shiftDate": "2026-09-22",
+      "shiftType": "12h Night",
+      "startTime": "08:00 PM",
+      "endTime": "08:00 AM",
+      "status": "scheduled",
+      "tasks": [
+        "Nighttime vitals check at 22:00, 02:00, 06:00",
+        "Maintain continuous BiPAP monitoring, check mask fit and skin pressure points",
+        "Bed position alteration and back massage",
+        "Emergency medication standby (Injection Mannitol IV if BP spikes)"
+      ],
+      "notes": "Keep oxygen concentrator on standby set to 2 L/min."
+    },
+    {
+      "id": "sched-104",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "shiftDate": "2026-09-23",
+      "shiftType": "12h Day",
+      "startTime": "08:00 AM",
+      "endTime": "08:00 PM",
+      "status": "scheduled",
+      "tasks": [
+        "Weekly tracheostomy tube tie replacement with sterile gauze padding",
+        "Fasting blood sugar test at 08:30 AM",
+        "Full body sponge bath and moisturizing for decubitus prevention",
+        "Enteral feed management (3 sessions)",
+        "Physiotherapy guided passive motion"
+      ],
+      "notes": "Dr. Vivek Mehra review scheduled via tele-consultation at 04:00 PM."
+    },
+    {
+      "id": "sched-105",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-2",
+      "nurseName": "Nurse Rajesh Kumar",
+      "shiftDate": "2026-09-23",
+      "shiftType": "12h Night",
+      "startTime": "08:00 PM",
+      "endTime": "08:00 AM",
+      "status": "scheduled",
+      "tasks": [
+        "Continuous BiPAP ventilation monitoring",
+        "Night medication via Ryle tube",
+        "Repositioning at 00:00, 03:00, 06:00",
+        "Vitals recording"
+      ],
+      "notes": "Night shift routine care."
+    },
+    {
+      "id": "sched-106",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "shiftDate": "2026-09-24",
+      "shiftType": "12h Day",
+      "startTime": "08:00 AM",
+      "endTime": "08:00 PM",
+      "status": "scheduled",
+      "tasks": [
+        "Bedside vitals & SpO2 monitoring",
+        "Tracheostomy care and oral hygiene",
+        "Enteral feed 3 sessions",
+        "Physiotherapy session with rehabilitation specialist"
+      ],
+      "notes": "Confirmed schedule."
+    },
+    {
+      "id": "sched-107",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "shiftDate": "2026-09-25",
+      "shiftType": "12h Day",
+      "startTime": "08:00 AM",
+      "endTime": "08:00 PM",
+      "status": "scheduled",
+      "tasks": [
+        "Regular ICU bedside nursing care",
+        "Medication administration",
+        "Patient hygiene & limb mobilization"
+      ],
+      "notes": "Weekly routine care cycle."
+    },
+    {
+      "id": "sched-103",
+      "patientId": "patient-2",
+      "patientName": "Mrs. Shakuntala Devi",
+      "nurseId": "nurse-3",
+      "nurseName": "Sister Anita Massey",
+      "shiftDate": "2026-09-23",
+      "shiftType": "12h Day",
+      "startTime": "09:00 AM",
+      "endTime": "09:00 PM",
+      "status": "completed",
+      "tasks": [
+        "Bilateral knee wound dressing with sterile povidone-iodine and dry gauze",
+        "Assisted walker ambulation for 15 minutes twice daily",
+        "Fasting and post-prandial blood sugar tracking",
+        "Administer oral anticoagulants and analgesics as prescribed"
+      ],
+      "notes": "Ensure ice-pack compression applied post-ambulation."
+    },
+    {
+      "id": "sched-1790070347256",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "shiftDate": "2026-09-22",
+      "shiftType": "12h Day",
+      "startTime": "08:00 AM",
+      "endTime": "08:00 PM",
+      "status": "scheduled",
+      "tasks": [
+        "Vital monitoring every 4 hours",
+        "Tracheostomy suctioning",
+        "Enteral feed administration"
+      ],
+      "notes": "hgfgf"
+    }
+  ],
+  "records": [
+    {
+      "id": "rec-098",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "recordedAt": "2026-09-20T09:14:34.585Z",
+      "vitals": {
+        "bpSystolic": 128,
+        "bpDiastolic": 84,
+        "pulseRate": 76,
+        "spO2": 97,
+        "temperatureF": 98.6,
+        "bloodGlucoseMgDl": 145,
+        "respiratoryRate": 18
+      },
+      "medicationsAdministered": [
+        {
+          "name": "Tab Amlodipine 5mg",
+          "dosage": "5mg via Ryle tube",
+          "route": "Enteral",
+          "time": "09:00 AM"
+        },
+        {
+          "name": "Inj Clexane 40mg",
+          "dosage": "0.4ml",
+          "route": "Subcutaneous",
+          "time": "10:00 AM"
+        }
+      ],
+      "clinicalNotes": "Initial check of the day. Stoma intact, no bleeding or purulence. Ryle tube aspiration clear gastric residual.",
+      "doctorInstructionsFollowed": true,
+      "hashSignature": "sha256:3a1b9c8d7e6f543210abcedf0123456789abcdef"
+    },
+    {
+      "id": "rec-099",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "recordedAt": "2026-09-21T09:14:34.585Z",
+      "vitals": {
+        "bpSystolic": 124,
+        "bpDiastolic": 80,
+        "pulseRate": 75,
+        "spO2": 98,
+        "temperatureF": 98.4,
+        "bloodGlucoseMgDl": 136,
+        "respiratoryRate": 17
+      },
+      "medicationsAdministered": [
+        {
+          "name": "Tab Amlodipine 5mg",
+          "dosage": "5mg via Ryle tube",
+          "route": "Enteral",
+          "time": "09:00 AM"
+        },
+        {
+          "name": "Inj Clexane 40mg",
+          "dosage": "0.4ml",
+          "route": "Subcutaneous",
+          "time": "10:00 AM"
+        },
+        {
+          "name": "Pantocid 40mg IV",
+          "dosage": "40mg in 10ml sterile water",
+          "route": "IV Slow Push",
+          "time": "08:30 AM"
+        }
+      ],
+      "clinicalNotes": "Morning vitals recorded prior to enteral feeding. SpO2 on room air 96%, increased to 98% with 1.5L nasal prong.",
+      "doctorInstructionsFollowed": true,
+      "hashSignature": "sha256:7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d"
+    },
+    {
+      "id": "rec-1",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "recordedAt": "2026-09-22T05:14:34.585Z",
+      "vitals": {
+        "bpSystolic": 126,
+        "bpDiastolic": 82,
+        "pulseRate": 74,
+        "spO2": 98,
+        "temperatureF": 98.4,
+        "bloodGlucoseMgDl": 138,
+        "respiratoryRate": 18
+      },
+      "medicationsAdministered": [
+        {
+          "name": "Tab Amlodipine 5mg",
+          "dosage": "5mg via Ryle tube",
+          "route": "Enteral",
+          "time": "09:00 AM"
+        },
+        {
+          "name": "Inj Clexane 40mg",
+          "dosage": "0.4ml",
+          "route": "Subcutaneous",
+          "time": "10:00 AM"
+        },
+        {
+          "name": "Multivitamin Infusion",
+          "dosage": "1 vial in 100ml NS",
+          "route": "IV Piggyback",
+          "time": "11:30 AM"
+        }
+      ],
+      "clinicalNotes": "Tracheostomy stoma site clean without discharge. Chest sounds bilateral air entry clear post-suction. Urine output 450ml over 4 hours, clear amber.",
+      "doctorInstructionsFollowed": true,
+      "hashSignature": "sha256:d8a94b5e8c1f0923eab97c11a6f8b910e527a"
+    },
+    {
+      "id": "rec-2",
+      "patientId": "patient-1",
+      "patientName": "Ramesh Khanna",
+      "nurseId": "nurse-1",
+      "nurseName": "Sister Priya Sharma",
+      "recordedAt": "2026-09-22T08:14:34.585Z",
+      "vitals": {
+        "bpSystolic": 122,
+        "bpDiastolic": 78,
+        "pulseRate": 72,
+        "spO2": 99,
+        "temperatureF": 98.6,
+        "bloodGlucoseMgDl": 142,
+        "respiratoryRate": 17
+      },
+      "medicationsAdministered": [
+        {
+          "name": "Syrup Citralka 10ml",
+          "dosage": "10ml in water",
+          "route": "Enteral",
+          "time": "01:30 PM"
+        }
+      ],
+      "clinicalNotes": "Post-lunch feeding tolerated well without reflux. Pupil reflex normal. Extremity tone improved on passive extension.",
+      "doctorInstructionsFollowed": true,
+      "hashSignature": "sha256:49c011e3bfa89a9c0499e9008bc3e143bcf22"
+    },
+    {
+      "id": "rec-3",
+      "patientId": "patient-2",
+      "patientName": "Mrs. Shakuntala Devi",
+      "nurseId": "nurse-3",
+      "nurseName": "Sister Anita Massey",
+      "recordedAt": "2026-09-21T21:14:34.585Z",
+      "vitals": {
+        "bpSystolic": 130,
+        "bpDiastolic": 84,
+        "pulseRate": 78,
+        "spO2": 98,
+        "temperatureF": 98.2,
+        "bloodGlucoseMgDl": 124,
+        "respiratoryRate": 16
+      },
+      "medicationsAdministered": [
+        {
+          "name": "Tab Ultracet",
+          "dosage": "1 tab",
+          "route": "Oral",
+          "time": "08:00 AM"
+        },
+        {
+          "name": "Tab Metformin 500mg",
+          "dosage": "500mg",
+          "route": "Oral",
+          "time": "08:30 AM"
+        }
+      ],
+      "clinicalNotes": "Surgical staples dry and intact on both knees. No active erythema or hematoma. Walked 20 steps with walker support.",
+      "doctorInstructionsFollowed": true,
+      "hashSignature": "sha256:7b92f91ec0847b2c0199e190ba33d014bc910"
+    }
+  ],
+  "requests": [
+    {
+      "id": "req-1",
+      "fullName": "Vikram Grover",
+      "phone": "+91-9810123456",
+      "serviceNeeded": "ICU Patient Care At Home",
+      "preferredLocation": "Janak Puri (West Delhi)",
+      "shiftRequirement": "24h Live-in",
+      "conditionNotes": "Mother discharged from ventilator support. Needs tracheostomy suctioning and 24h nurse immediately.",
+      "status": "completed",
+      "createdAt": "2026-09-22T08:14:34.585Z"
+    },
+    {
+      "id": "req-2",
+      "fullName": "Deepika Malhotra",
+      "phone": "+91-9871198765",
+      "serviceNeeded": "Elderly & Senior Citizen Care",
+      "preferredLocation": "Noida Hub (Sector 62)",
+      "shiftRequirement": "12h Day Shift",
+      "conditionNotes": "84 year old grandfather with mild Alzheimer requiring companion and medication supervision.",
+      "status": "assigned",
+      "createdAt": "2026-09-22T08:44:34.585Z"
+    }
+  ]
+}
